@@ -1,0 +1,70 @@
+.view {
+  display: flex;
+  flex-direction: column;
+}
+
+.clockdiv {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  height: 58px;
+}
+
+.month,
+.weekday {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  text-align: center;
+  gap: 5px;
+}
+
+.day {
+  border-radius: 30px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.month div:hover {
+  background-color: forestgreen;
+  color: white;
+  cursor: pointer;
+}
+
+.wday {
+  background-color: blue;
+  color: white;
+}
+
+.night {
+  background-color: #7B001C;
+  color: white;
+}
+
+.personWork {
+  font-size: 30px;
+  font-family: 'Comic SansMS', cursive, sans-serif;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weekday,
+.month {
+  font-size: 30px;
+  font-family: 'Comic SansMS', cursive, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  text-align: center;
+  gap: 20px;
+}
+
+.month div:first-child {
+  grid-column: 1;
+}
